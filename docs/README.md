@@ -71,57 +71,58 @@ Loja_poo_ems/
 ```
 
 ## 💡 Funcionalidades
-Categorias
+### Categorias
 
-Listar todas categorias em ordem alfabética
+* Criar categoria
+* Listar categoria
+* Listar todas categorias em ordem alfabética
+* Consultar categoria por ID
+* Consultar categoria por nome
+* Atualizar categoria
+* Excluir categoria - (Retorna mensagem se o registro não existir)
 
-Consultar categoria por ID
+### CRUD completo com os seguintes campos:
+- id
+- nome
+- ativo
+- dataCad
 
-Consultar categoria por nome
 
-Excluir categoria
+## 💡 Funcionalidades:
+### Produtos
 
-Retorna mensagem se o registro não existir
+* Criar produto
+* Listar produtos
+* Listar todas produtos em ordem alfabética
+* Consultar produtos por ID
+* Consultar produtos por nome
+* Atualizar produto
+* Excluir produto - (Retorna mensagem se o registro não existir)
 
-Produtos
+### CRUD completo com os seguintes campos:
+- id
+- nome
+- valor
+- dataCad
+- idCategoria
 
-CRUD completo com os seguintes campos:
 
-id
-
-nome
-
-valor
-
-dataCad
-
-idCategoria
-
-Funcionalidades:
-
-Criar produto
-
-Listar produtos
-
-Atualizar produto
-
-Excluir produto
-
-Listar produtos por categoria
 
 ## 🚀 Scripts Úteis
 
-Rodar em modo de desenvolvimento com ts-node e nodemon:
+### Rodar em modo de desenvolvimento com ts-node e nodemon:
 
 npm run dev
 
-Compilar TypeScript:
+### Compilar TypeScript:
 
 npx tsc
 
-Rodar o projeto compilado:
+### Rodar o projeto compilado:
 
 node dist/index.js
+
+
 ## 🌱 Observações
 
 Todas as regras de negócio estão dentro da pasta services.
