@@ -50,6 +50,8 @@ npx tsc --init
 ```
 
 ## 📂 Estrutura do Projeto
+
+```bash
 Loja_poo_ems/
 │
 ├─ src/
@@ -65,6 +67,8 @@ Loja_poo_ems/
 ├─ package.json
 ├─ tsconfig.json
 └─ README.md
+
+```
 
 ## 💡 Funcionalidades
 Categorias
