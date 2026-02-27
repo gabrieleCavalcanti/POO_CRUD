@@ -1,14 +1,36 @@
-SERA UM CRUD aplicando POO
+# 🛒 Loja POO EMS
 
-O que foi instalado:
+Projeto de **CRUD de Produtos e Categorias** utilizando **POO (Programação Orientada a Objetos)** em **TypeScript**, **Express** e **MySQL**.
 
+---
+
+## ⚙️ Tecnologias
+
+- [Node.js](https://nodejs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Express](https://expressjs.com/)
+- [MySQL](https://www.mysql.com/)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+
+---
+
+## 📦 Instalação
+
+1. Inicializar projeto Node.js:
+
+```bash
 npm init -y
+
 npm install -D typescript ts-node @types/express @types/node nodemon
+
 npm i express mysql2 dotenv
 
--- create tsconfig.json
 npx tsc --init
+```
 
+## Configuração do tsconfig.json:
+
+```bash
 {
   "compilerOptions": {
     "target": "ES2023",
@@ -25,33 +47,83 @@ npx tsc --init
   },
   "include": ["src"]
 }
+```
 
+## 📂 Estrutura do Projeto
+Loja_poo_ems/
+│
+├─ src/
+│  ├─ config/
+│  │  └─ enum/          # Enumerador das variáveis do .env
+│  ├─ models/            # Validação dos dados
+│  ├─ services/          # Regras de negócio
+│  ├─ controllers/       # Controladores do CRUD
+│  ├─ routes/            # Rotas da API
+│  └─ index.ts           # Arquivo principal
+│
+├─ .env                  # Variáveis de ambiente
+├─ package.json
+├─ tsconfig.json
+└─ README.md
 
+## 💡 Funcionalidades
+Categorias
 
+Listar todas categorias em ordem alfabética
 
-config/enum
+Consultar categoria por ID
 
-enumerador das variaveis do .env
+Consultar categoria por nome
 
+Excluir categoria
 
-models - validação
+Retorna mensagem se o registro não existir
 
-services - regras de negocio
+Produtos
 
+CRUD completo com os seguintes campos:
 
-Projeto: LOja_poo_ems
+id
 
-Implementar:
+nome
 
-1 DELETE, informar se o registro não existir
-2 CONSULTA POR ID
-3 CONSULTA POR NOME DA CATEGORIA
-4 CONSULTA PARA EXIBIR AS CATEGORIAS EM ORDEM ALFABETICA
-5 CRUD COMPLETO PARA PRODUTOS COM TODOS RECURSOS DE CATEGORIAS
+valor
 
+dataCad
 
-ID
-NOME
-VALOR
-DATACAD
-IDCATEGORIA
+idCategoria
+
+Funcionalidades:
+
+Criar produto
+
+Listar produtos
+
+Atualizar produto
+
+Excluir produto
+
+Listar produtos por categoria
+
+## 🚀 Scripts Úteis
+
+Rodar em modo de desenvolvimento com ts-node e nodemon:
+
+npm run dev
+
+Compilar TypeScript:
+
+npx tsc
+
+Rodar o projeto compilado:
+
+node dist/index.js
+## 🌱 Observações
+
+Todas as regras de negócio estão dentro da pasta services.
+
+Validações de dados estão em models.
+
+Variáveis de ambiente devem ser configuradas no .env.
+
+Estrutura pensada para facilitar futuras implementações de endpoints adicionais.
